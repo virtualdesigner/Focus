@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Focus",
+  "version": "1.0",
+  "description": "This extension enables you to see an inspiring image on loading youtube and removes the ad at the top of the youtube homepage.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["./main.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "./logo.png"
+    },
+    "default_title": "Focus",
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": ["img.jpg"]
+}

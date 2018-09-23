@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+
+.quote-smde {
+  font-size: 28px;
+  font-family: "Roboto Slab", serif;
+  color: white;
+  z-index: 3000;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(158, 158, 158, 0.5);
+}
+
+.quote-smde:hover {
+  cursor: pointer;
+}
